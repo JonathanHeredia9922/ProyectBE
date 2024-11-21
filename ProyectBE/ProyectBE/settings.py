@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'appGPR',
     'servicios',
     'blog',
+    'contacto',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +125,14 @@ STATIC_URL = '/static/'
 
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
+
+#Configuracion de Email
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST="smtp.gmail.com"
+EMAIL_USE_TLS=True
+EMAIL_PORT=587
+EMAIL_HOST_USER="jonathanheredia9922@gmail.com"
+EMAIL_HOST_PASSWORD="Elbarto9922"
 
 
 # Default primary key field type

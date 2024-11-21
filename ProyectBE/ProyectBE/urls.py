@@ -23,6 +23,10 @@ urlpatterns = [
     
     path('servicios/', include('servicios.urls')),
     
+    path('blog/', include('blog.urls')),
+    
+    path('contacto/', include('contacto.urls')),
+    
     path('', include('appGPR.urls'))
     
 ]

@@ -7,14 +7,10 @@ def home(request):
     return render(request,"appGPR/home.html" )
 
 
-
 def tienda(request):
     
      return render(request,"appGPR/tienda.html" )
 
-def blog(request):
-    
-     return render(request,"appGPR/blog.html" )
 
 def contacto(request):
     

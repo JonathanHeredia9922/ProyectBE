@@ -277,3 +277,12 @@ ul.errorlist{
   font-style: italic;
   color: red;
 }
+
+.contenedorF{
+  background-color: rgba(18, 50, 6, 0.9);;
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 1px 0px  ;
+
+}
