@@ -16,6 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.documentation import include_docs_urls
+
 
 
 urlpatterns = [
@@ -23,10 +25,13 @@ urlpatterns = [
     
     path('servicios/', include('servicios.urls')),
     
-    path('blog/', include('blog.urls')),
+    #path('blog/', include('blog.urls')),
     
     path('contacto/', include('contacto.urls')),
     
-    path('', include('appGPR.urls'))
+    path('', include('appGPR.urls')),
     
+    path('blog/', include('blog.urls')),
+    
+    path('docs/', include_docs_urls(title = 'Api Documentation'))
 ]
